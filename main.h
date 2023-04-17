@@ -211,11 +211,12 @@ char *error_exit_shell(data_shell *datash);
 
 /* error2.c */
 char *error_get_alias(char **args);
-char *error_env(data_shell *datash);
+/*char *error_env(data_shell *datash)*/
+char *error_env(int counter, char *program_name, char *arg);
 char *error_syntax(char **args);
 char *error_permission(char **args);
-char *error_path_126(data_shell *datash);
-
+/*char *error_path_126(data_shell *datash)*/
+char *error_path_126(int counter, char *program_name, char *arg);
 
 /* get_error.c */
 int get_error(data_shell *datash, int eval);
